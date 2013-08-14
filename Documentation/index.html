@@ -1,0 +1,212 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>HALFCREATIVE Theme Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+			
+		<img src="assets/images/bg.jpg"/>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 04/08/2013<br>
+					By: Supview<br>
+					Email: <a href="mailto:hello@iamsupview.be">hello@iamsupview.be</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a target="_blank" href="http://themeforest.net/user/Supview">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#contact">Contact Form</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This theme is a one page portfolio. All of the information within the main content area is nested within a div with an id of "primaryContent". The general template structure is the same throughout the template. Here is the general structure looks like.</p>
+		
+		<img src="assets/images/htmlstructure.png" alt="HTML Structure" />
+		<p></p>
+		<p>If you have to write something, remplace links, this is where you have to go :)</p>
+
+		<p>Here is the structure of One Work</p>
+		
+		<img src="assets/images/workstructure.png" alt="Work Structure" />
+		<p></p>
+		<p><strong>Don't leave the href="" with an hashtag, it won't makes work the expander. So put a link like this one : http://www.yourdomain.com/#/</strong></p>
+		
+		<hr>
+
+		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+		
+		<p>There's always a table of content like this one</p>
+
+<pre>	
+
+/*
+
+	01. Body and things that we don't change
+	02. Navigation
+	03. Setting the main's sections
+	04. Home Section
+	05. Works Section
+	06. About Section
+	07. Contact Section
+	08. Twitter Module
+	09. Social Module
+			
+*/
+
+
+</pre>		
+
+		<p>I'm using three CSS files in this theme. The first one is media CSS Styling. This is where you can found everything about the FontFace, the Media Queries for make it responsive and finally the keyframes for little annimations on the website.</p>
+ 
+<p> <strong> You will found the home background on line 137 </strong></p> 
+<pre>
+background:url('http://www.placehold.it/1400x800')no-repeat center center fixed; /* -- CHANGE HERE -- */
+</pre>
+ 
+<p>  <strong>About the Background 100% for iPad / iPhone, you have to change also the link of your background in the media.css</strong></p>
+
+
+		<p>The second file ( named style.css ) contains all of the specific stylings for the page. The file is separated into sections using:</p>  
+
+<pre>	
+	/* 01. NAVIGATION ================================================== */
+
+	some code
+
+	/* 02. WORKS SECTION ================================================== */
+	
+	some code
+	
+	/* 03. ABOUT SECTION ================================================== */
+	
+	some code
+	
+	/* 04. CONTACT SECTION ================================================== */
+	
+	some code
+	
+	etc, etc. 
+</pre>
+
+		<p>The thirth file ( named gumby.css) is the framework that i'm using. you have nothing to touch there. It's for the row and column.</p>  
+		
+		<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
+
+
+		<hr>
+		
+		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme imports Seven Javascript files.</p>
+		
+		<ol>
+			<li>jQuery 1.9.1</li>
+			<li>jQuery Modernizr Custom</li>
+			<li>jquery.tweet.js</li>
+			<li>grid.js</li>
+			<li>scripts.js</li>
+			<li>waypoints.js</li>
+			<li>ScrollTo</li>
+		</ol>
+		  
+		<ol>
+			<li>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</li>
+			<li>Modernizr make an altenative for others navigators if they don't accept some code.</li>
+			<li>jquery.tweet.js is used for the feed of your last post on twitter.</li>
+			<li>grid.js is used for the works grid.</li>
+			<li>scripts.js contain little script for making the always top navigation or the code for making work twitter  like this.</li>
+			<li>Waypoints.js is used for the sticky navigation and selected class on navigation.</li>
+			<li>ScrollTo is used for the smooth scrolling</li>
+			
+			
+			
+		</ol>
+		
+			<p>You will probably use mostly the scripts.js, if you wan't to add your twitter feed you have just to remplace my username by yours and also the modpath from my website to your website.</p>
+
+<pre>
+/* -- TWITTER -- */
+
+
+     jQuery(function($){
+        $("#ticker").tweet({
+          username: "Supview",
+          modpath: 'http://www.yourwebsite.com/js/twitter/', /* director of the twitter folder */
+          page: 1,
+          avatar_size: 0,
+          count: 10,
+		  template: "{text}{time}",
+		  filter: function(t){ return ! /^@\w+/.test(t.tweet_raw_text); },
+          loading_text: "loading ..."
+        
+        etc.
+        
+      });
+  
+</pre>	
+
+				<hr>
+		
+		<h3 id="contact"><strong>D) Contact Form</strong> - <a href="#toc">top</a></h3>
+		
+		<p>It's the same structure as the index.html for the HTML Part.</p>
+		
+		<p> For using it with your E-Mail just replace the code below here on line 5.
+		
+<pre>
+$email_to = "hello@yourmail.com";
+</pre>
+
+
+				<hr>
+		
+		<h3 id="credits"><strong>E) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've used the following images, icons or other files as listed.
+		
+		<ul>
+			<li>Gumby Framework - <a target="_blank" href="http://gumbyframework.com/">http://www.gumbyframework.com</a></li>
+			<li>Social Icon - <a target="_blank" href="http://fontfabric.com/social-media-icons-pack/">http://fontfabric.com/social-media-icons-pack/</a></li>
+			<li>Expanding works from Codrops - <a target="_blank" href="http://tympanus.net/codrops/2013/03/19/thumbnail-grid-with-expanding-preview/">http://tympanus.net/codrops/2013/03/19/thumbnail-grid-with-expanding-preview/</a></li>
+			<li>jQuery Tweet from seaofclouds - <a target="_blank" href="http://tweet.seaofclouds.com/">http://tweet.seaofclouds.com/</a></li>
+			<li>Contact form from tutsplus - <a target="_blank" href="http://webdesign.tutsplus.com/tutorials/site-elements/bring-your-forms-up-to-date-with-css3-and-html5-validation/">http://webdesign.tutsplus.com/tutorials/site-elements/bring-your-forms-up-to-date-with-css3-and-html5-validation/</a></li>
+		</ul>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. <strong>No guarantees, but I'll do my best to assist.</strong> If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+				<p><a href="#toc">Go To Table of Contents</a></p>
+				<p align="center"><a href="http://themeforest.net/user/Supview" target="_blank"><img src="assets/images/logo.png"/></a></p>
+	</div><!-- end div .container -->
+</body>
+</html>

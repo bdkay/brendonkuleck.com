@@ -1,0 +1,820 @@
+/*
+
+	01. Body and things that we don't change
+	02. Navigation
+	03. Setting the main's sections
+	04. Home Section
+	05. Works Section
+	06. About Section
+	07. Contact Section
+	08. Twitter Module
+	09. Social Module
+			
+*/
+
+
+/* 01. BODY AND WRAPPER ================================================== */
+
+
+html, body {
+  font-family:'OpenSansRegular', sans-serif;
+	margin:0px auto;
+	width:100%;
+	height: 100%;
+	background-color: #FFF;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+}
+
+a:visited {
+	color: #1ebad6;
+}
+	
+.row {
+	text-align: center;
+}
+
+.subtitle {
+	font-family: 'OpenSansRegular', sans-serif;
+	letter-spacing: 2px;
+	color: #BBB;
+	margin-bottom: 0px;
+	padding: 30px 30px 30px 30px;
+	font-size: 22px;
+}
+
+.subtitle a {
+	font-family: 'OpenSansRegular', sans-serif;
+	color: #1ebad6;
+	text-decoration: none;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+.subtitle a:hover {
+	color: #777;
+}	
+
+h2 {
+	color: #555;
+	font-family: 'OpenSansLight', sans-serif;
+	font-size: 52px;
+	padding: 70px 0px 0px 0px;
+}
+
+.title_line {
+    border-bottom: 1px solid #D5D5D5;
+    display: block;
+    height: 1px;
+    margin: auto;
+    margin-top: 40px;
+    width: 90px;
+  }
+
+
+/* 02. NAVIGATION ================================================== */
+
+nav #logo {
+	float: left;
+	color: #212121;
+	margin-left: 0px;
+	padding: 5px 15px 15px 15px;
+}
+	
+nav {
+	z-index: 42;
+	width: 100%;
+	background: #FFF;
+	position: relative;
+	height: 60px;
+}
+
+nav ul {
+	float: right;
+	display: inline-block;
+	margin-right: 70px;
+	list-style: none;
+	padding-top: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    float: left;
+    padding: 5px 20px;
+  }
+
+nav ul li a {
+  color: #333;
+	position: relative;
+	display: inline-block;
+	font-weight: 300;
+	text-decoration: none;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: block;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+nav li a:hover,
+nav li a.selected {
+	color: #1ebad6;
+}
+
+.sticky {
+	position: fixed;
+	top: 0px;
+}
+
+
+/* Mobile Navigation Display none if no iDevice */
+
+nav select {
+      display: none;
+    }
+      
+
+/* 03. SETTING OF MAIN SECTIONS  ================================================== */
+
+
+#projects {
+	background: #f5f5f5;
+	padding: 70px 0px 50px;
+}
+
+#about {
+	background-color: #EEE;
+	padding: 70px 0px 50px;
+}
+
+.about-intro p {
+	text-align: left;
+	padding-bottom: 20px;
+}
+	
+#contact {
+	background-color: #f9f9f9;
+	padding: 70px 0px 50px;
+}
+	
+
+#twitter_module {
+	background-color: #FFF;
+	padding: 40px 0px 40px;
+}
+	
+	
+#social_module {
+	background-color: #fFF;
+	padding: 0px 0px 30px;
+}
+	
+	
+footer {
+	padding: 20px 0;
+	background-color: #333;
+}
+
+footer p {
+	color: #fff;
+}
+
+
+/* 04 HOME SECTION  ================================================== */
+
+#home {
+	width: 100%;
+	height: 100%;
+	color: #FFF;
+	background:url('../img/bw-lake_hero.jpg') no-repeat center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment : fixed;  /* FIXED FOR IE */
+	overflow:hidden;
+  h1 {
+  	color: #f5f5f5;
+		font-size: 40px;
+		text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+		position: relative;
+		margin: 37% auto 0px auto;
+		z-index: 999;
+  	font-weight: bold;
+  }
+  p {
+  	font-weight: 800;
+  	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+#home .hero-tagline p {
+	font-size: 22px;
+	font-weight: 400;
+	padding: 15px 0;
+}
+
+#hero-title {
+	margin: 0 auto;
+}
+
+.roles {
+  font-size: 36pt;  
+  font-weight: 300;  
+  display: inline-block;
+  line-height: 70px;
+  height: 70px;
+  vertical-align: middle;
+  overflow: hidden;
+  color: #FFF;
+  z-index: 999;
+}
+
+.roles div {
+    height: 70px;
+    -webkit-transition: margin-top 0.5s ease-in-out;
+    -moz-transition:    margin-top 0.5s ease-in-out;
+    -o-transition:      margin-top 0.5s ease-in-out;
+    transition:         margin-top 0.5s ease-in-out;
+  }
+
+#down_button a {
+	position: absolute; 
+	width: 80px; 
+	height: 80px; 
+	bottom: 5%; 
+	left: 50%; 
+	margin-left: -40px;
+	background: url("../img/down.png") no-repeat; 
+	background-position: 0px -80px;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+	
+#down_button a:hover {
+	background-position: 0px 0px;
+}
+
+
+/* -- Button back Contact -- */
+	
+#down_button_contact a {
+	width: 180px;
+	padding:  0px;
+	background-color:  #1ebad6;
+	font-family: 'OpenSansRegular', serif;
+	font-size: 13px;
+	color: #FFF;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-decoration: none;
+	position: absolute;
+	bottom: 0px; 
+	left: 50%; 
+	margin-left: -90px;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+
+#down_button_contact a:hover {
+	color: #121212;
+	background: #FFF;
+}
+
+
+/* 05 WORKS SECTION  ================================================== */
+
+.og-grid {
+  list-style: none;
+	padding: 10px 0;
+	margin: 0px auto;
+	text-align: center;
+	width: 100%;
+}
+	
+.og-grid li {
+	display: inline-block;
+	margin: 0px 15px 20px 0px;
+	vertical-align: top;
+	height: 185px;
+}
+
+/* SELECTED ILLUSTRATION */
+
+.og-grid li.og-expanded > a::after {
+	top: auto;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: #ddd;
+	border-width: 15px;
+	margin: 175px 0px 0px -140px;
+}
+
+/* PREVIEW CLASS */
+
+.og-expander {
+	position: absolute;
+	background: #fff;
+	top: auto;
+	left: 0;
+	width: 100%;
+	margin-top: 10px;
+	text-align: left;
+	height: 0;
+	overflow: hidden;
+}
+
+.og-expander-inner {
+	padding: 30px 30px;
+	height: 100%;
+}
+
+.og-close {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 50px;
+	right: 20px;
+	cursor: pointer;
+	opacity: 1;
+	background: url('../img/close.png');
+	z-index: 20;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+.og-close:hover {
+	opacity: 0.5;
+}
+
+.og-fullimg {
+	width: 50%;
+	float: left;
+	height: 80%;
+	overflow: hidden;
+	position: relative;
+}
+
+.og-details {
+	width: 50%;
+	float: left;
+	height: 90%;
+	overflow: hidden;
+	position: relative;
+	padding: 10px 40px 0 20px;
+	p.tech-used {
+		font-weight: bold;
+	}
+	a.hide-button {
+		display: none;
+	}
+}
+
+
+.og-fullimg {
+	text-align: center;
+	margin-top:10px;
+}
+
+.og-fullimg img {
+	display: inline-block;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.og-details h3 {
+	font-weight: 300;
+	font-size: 52px;
+	padding: 10px 0 10px;
+	margin-bottom: 30px;
+	color: #555;
+}
+
+.og-details p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: #999;
+	margin-bottom: 10px;
+}
+
+.og-details a {
+	font-size: 16px;
+	color: #FFF;
+	font-family:'OpenSansLight', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 10px 20px;
+	background: #1ebad6;
+	border: 3px solid #1ebad6;
+	display: inline-block;
+	margin: 30px 0 0;
+	outline: none;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+.og-details a::before {
+	content: '\2192';
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.og-details a:hover {
+	background: #555;
+	border-color: #555;
+	color: #FFF;
+}
+
+.og-loading {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #ddd;
+	box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -25px 0 0 -25px;
+	-webkit-animation: loader 0.5s infinite ease-in-out both;
+	-moz-animation: loader 0.5s infinite ease-in-out both;
+	animation: loader 0.5s infinite ease-in-out both;
+}
+
+
+
+/* 06. ABOUT SECTION ================================================== */
+
+
+.portraits {
+	position: relative;
+	list-style-type: none;
+	display: inline-block;
+	background: #eee;
+	background: #FFF;
+}
+
+.portraits img {
+	width: 100%;
+	-webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  }
+       
+
+.portraits img {
+	filter:alpha(opacity=80);
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+    opacity: 0.8;
+  }
+
+.portraits .name {
+	font-size: 18px;
+	color: #2e2e2e;
+	font-weight: normal;
+	font-style: normal;
+	margin: 10px 0 10px 0;
+	display: inline-block;
+}
+
+.portraits .poste {
+	color: #FFFFFF;
+	background-color: #1ebad6;
+	font-size:13px;
+	text-transform: uppercase;
+	padding: 2px 8px;
+	display: inline-block;
+}
+
+.portraits .whathedo {
+	color: #3b3b3b;
+	font-size: 12px;
+}
+
+
+.portraits .whathedo a {
+	padding: 0px 5px 0px 5px;
+}
+
+
+/* 07 CONTACT SECTION ================================================== */
+
+.social-contact {
+	width: 100%;
+	margin: 0 auto;
+	padding: 40px;
+}
+
+.social-contact_inner {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.social-contact a {
+	display:block;
+	text-decoration: none;
+	height: 34px;
+	width: 34px;
+}
+
+.social-contact ul li {
+	background: url('../img/sprite_social-icons.png') no-repeat;
+	width: 34px;
+	height: 34px;
+	list-style: none;
+	display: inline-block; 
+	margin-left:20px;
+	opacity: 0.6;
+}
+
+
+ul li.social-icon_twitter {
+	background-position: 0 0;
+}
+
+ul li.social-icon_twitter:hover {
+	opacity: 1;
+}
+
+ul li.social-icon_instagram {
+	background-position: -94px 0;
+}
+
+ul li.social-icon_instagram:hover {
+	opacity: 1;
+}
+
+ul li.social-icon_facebook {
+	background-position: -235px 0;
+}
+
+ul li.social-icon_facebook:hover {
+	opacity: 1;	
+}
+
+ul li.social-icon_github {
+	background-position: -141px 0;
+}
+
+ul li.social-icon_github:hover {
+	opacity: 1;	
+}
+
+ul li.social-icon_lastfm {
+	background-position: -188px 0;
+}
+
+ul li.social-icon_lastfm:hover {
+	opacity: 1;
+}
+
+ul li.social-icon_linkedin {
+	background-position: -47px 0;
+}
+
+ul li.social-icon_linkedin:hover {
+	opacity: 1;
+}
+
+
+#contact form {
+	margin-top: 20px;
+}
+
+#contact form input,
+#contact form textarea{
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	border: 2px solid #FFF;
+	box-shadow: none;
+	color: #999;
+	resize: vertical;
+	font-size: 12px;
+	letter-spacing: 1px;
+	margin-bottom: 25px;
+	padding: 5px 10px;
+	transition: all .3s ease-in-out;
+	width: 100%;
+}
+
+/* SET A HEIGHT TO THE INPUT*/
+
+#contact form input{
+	height: 40px;
+	resize: none;
+}
+
+/* SET A HEIGHT TO THE TEXTAREA*/
+
+#contact form textarea{
+	min-height: 120px;
+}
+	
+/* BUTTON SENDER */
+
+#contact form .submit{
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	background: #1ebad6;
+	border: 2px solid #1ebad6;
+	color: #FFF;
+	font-size: 12px;
+	height: 40px;
+	letter-spacing: 1px;
+	padding: 5px 10px;
+	text-transform: uppercase;
+	transition: all .3s ease-in-out;
+	width: 100%;
+}
+
+/* BUTTON SENDER HOVER */
+
+#contact form .submit:hover{
+	background: #555;
+	border: 2px solid #555;
+	color:#FFF;
+	cursor:pointer;
+}
+
+/* INPUT AND TEXTAREA WHEN NOTHING  */
+
+#contact form input:required,
+#contact form textarea:required{
+	background: #FFF url(../img/invalid.png);
+	background-position: 98% 5px;
+	background-repeat: no-repeat;
+	box-shadow: inherit;
+}
+
+/* INPUT AND TEXTAREA WHEN VALID : GOOD */
+
+#contact form input:required:valid,
+#contact form textarea:required:valid{
+	background: #FFF url(../img/valid.png);
+	background-position: 98% 5px;
+	background-repeat:no-repeat;
+	border-color: #1ebad6;
+	color: #1ebad6;
+}
+
+/* INPUT AND TEXTAREA WHEN INVALID : NOT GOOD GOES RED */
+
+#contact form input:focus:invalid,
+#contact form textarea:focus:invalid{
+	background: #FFF url(../img/invalid-red.png) no-repeat 98% 5px;
+	border-color: #ec7e7e;
+	box-shadow: 0 0 2px rgba(236,126,126,0.7);
+}
+
+/* BLOCK CONTACT RIGHT */
+
+#contact .info {
+	width: auto;
+	margin-left: 5%;
+	display: inline-block;
+	text-align: left;
+	line-height: 25px;
+}
+	
+#contact .info p {
+	color: #777;
+}
+	
+#contact .info h4:first-child {
+	margin-top: 15px;
+}
+
+#contact .info h4 {
+	color: #555;
+	font-family: 'OpenSansSemibold', sans-serif;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: normal;
+	letter-spacing: 1px;
+	margin-bottom: 0px;
+	margin-top: 30px;
+}
+
+#contact .info a {
+	color: #1ebad6;
+	letter-spacing: 1px;
+	text-decoration: none;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+#contact .info a:hover {
+	color: #777;
+	text-decoration: none;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+/* 11. PORTFOLIO GRID CONTAINER ======================================= */
+
+.recent-work {
+	.item {
+		position: relative;
+		overflow: hidden; 
+		max-height: 240px;
+		margin-bottom: 20px;
+	}
+}
+
+.portfolio .item, .gallery .item {
+	position: relative;
+	overflow: hidden; 
+	margin-bottom: 20px;
+}
+
+.img-caption {
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	height:  100%;
+}
+
+.portfolio .item img, .gallery .item img, .recent-work .item img, .portfolio .item a, .recent-work .item a, .gallery .item a {
+	display: block;
+}
+
+.img-caption .desc {
+	padding: 10%;
+	h3 {
+		padding-top: 10px;
+		font-size: 28px;
+		color: #fff;
+		line-height: 1em;
+	}
+	p {
+		padding: 15px 0;
+		color: #fff;
+	}
+	span {
+		text-align: center;
+		display: block;
+		font-weight: bold;
+	}
+}
+
+span.mag-glass {
+	position: relative;
+	top: 20px;
+	background:url('../img/img_expand.png') no-repeat; 
+	width: 30px;
+	height: 31px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.portfolio .item.element-4 .img-caption .desc span {
+	margin-top: 3%;
+}
+
+.portfolio .item.element-4 .img-caption .desc, .gallery .item.element-4 .img-caption .desc {
+	padding: 5%;
+}
+
+.recent-work .item img, .portfolio .item img, .gallery .item img  {
+	width: 100%;
+	height: auto;
+}
