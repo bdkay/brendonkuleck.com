@@ -11,8 +11,8 @@
 	08. WORKS GRID Media Queries
 	09. Mobile Navigation Queries
 	
-*/
-/* 00. FONT FACE ================================================== */
+
+/* 00. FONT FACE ================================================== 
 @font-face {
   font-family: 'OpenSansLight';
   src: url("../fonts/OpenSans-Light-webfont.eot");
@@ -34,7 +34,7 @@
   font-weight: normal;
   font-style: normal; }
 
-/* SOCIAL ICON */
+/* SOCIAL ICON 
 @font-face {
   font-family: 'Socialico';
   src: url("../fonts/Socialico.eot");
@@ -42,7 +42,7 @@
   font-weight: normal;
   font-style: normal; }
 
-/* 01. KEY FRAMES FADE IN ================================================== */
+/* 01. KEY FRAMES FADE IN ================================================== 
 @-webkit-keyframes Anim {
   from {
     opacity: 0; }
@@ -82,7 +82,7 @@
   -moz-animation-delay: 0.3s;
   animation-delay: 0.3s; }
 
-/* 02. MAX WIDTH 960px ================================================== */
+/* 02. MAX WIDTH 960px ==================================================
 @media screen and (max-width: 960px) {
   .subtittle {
     font-family: 'OpenSansRegular', sans-serif;
@@ -104,7 +104,7 @@
     display: inline-block;
     margin: 10px 0 0;
     outline: none; } }
-/* 02. MAX WIDTH 960px ================================================== */
+/* 02. MAX WIDTH 960px ================================================== 
 @media screen and (max-width: 1024px) {
   #home {
     width: 100%;
@@ -116,7 +116,7 @@
     -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
-    /* FIXED FOR IE */ }
+    /* FIXED FOR IE  }
 
   .ticker ul.tweet_list {
     height: 16px;
@@ -150,7 +150,7 @@
     display: inline-block;
     margin: 10px 0 0;
     outline: none; } }
-/* 03. MAX WIDTH 720px ================================================== */
+/* 03. MAX WIDTH 720px ================================================== 
 @media screen and (max-width: 720px) {
   #home h1 {
     line-height: 1em;
@@ -201,7 +201,7 @@
   #projects .og-grid .og-details {
     text-align: center;
     width: 100%; } }
-/* 04. MAX WIDTH 520px =============================================== */
+/* 04. MAX WIDTH 520px =============================================== 
 @media screen and (max-width: 620px) {
   body {
     margin: 0; }
@@ -217,7 +217,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-attachment: fixed;
-    /* FIXED FOR IE */ }
+    /* FIXED FOR IE  }
     #home p {
       line-height: 30px; }
     #home h1 {
@@ -270,7 +270,7 @@
 
   #social_module .row ul li i {
     padding: 0px 0px 0px 0px; } }
-/* 05. Smartphones landscape  ================================================== */
+/* 05. Smartphones landscape  ================================================== 
 @media only screen and (max-device-width: 550px) and (orientation: landscape) {
   #home {
     height: 100%; }
@@ -282,17 +282,17 @@
 
   #down_button a {
     display: none; } }
-/* 06. Smartphones portraits  ================================================== */
+/* 06. Smartphones portraits  ================================================== 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   #projects .row h2,
   #about .row h2,
   #contact .row h2 {
     font-size: 30px; } }
-/* 07. iPads portrait  ================================================== */
+/* 07. iPads portrait  ================================================== 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   #home h1 {
     margin-top: 45%; } }
-/* 08. WORKS GRID Media Queries ================================================== */
+/* 08. WORKS GRID Media Queries ================================================== 
 @-webkit-keyframes loader {
   0% {
     background: #ddd; }
@@ -370,7 +370,7 @@
 
   .og-expander-container {
     padding-top: 10px; } }
-/* 09. Mobile Navigation Queries ================================================== */
+/* 09. Mobile Navigation Queries ================================================== 
 @media screen and (max-width: 650px) {
   .nav-container nav ul li {
     display: none; }
