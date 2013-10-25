@@ -36,6 +36,33 @@
   font-weight: normal;
   font-style: normal; }
 
+/* 02. MAX WIDTH 960px ================================================== */
+
+@media screen and (max-width: 767px) {
+  .img-caption {
+    display: none;
+  }
+
+  #contain {
+    padding-left: 60px;
+  }
+
+  .portraits img {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #contain {
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #logo {
+    display: none;
+  }
+}
 
 
 
