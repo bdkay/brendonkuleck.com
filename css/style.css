@@ -182,6 +182,11 @@ footer p {
   font-weight: 400;
   padding: 15px 0; }
 
+#home .hero-tagline a {
+color: #fff;
+text-decoration: underline; 
+}
+
 #hero-title {
   margin: 0 auto; }
 
