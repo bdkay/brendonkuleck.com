@@ -50,11 +50,17 @@
   .portraits img {
     width: 40%;
   }
+  #home h1 {
+    line-height: 45px;
+  }
 }
 
 @media screen and (max-width: 400px) {
   #contain {
     padding-left: 10px;
+  }
+  #home h1 {
+    line-height: 45px;
   }
 }
 
